@@ -429,7 +429,7 @@ const zead = [
 
 
 
-            var prefix = "%";
+            var prefix = "";
 client.on('message', message => {
          if (message.content === prefix + "dt") {
          if (!message.channel.guild) return message.reply('** This command only for servers **');  
