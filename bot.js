@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 
 client.on("message", message => {
- if (message.content === "%help") {
+ if (message.content === "help") {
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -12495,7 +12495,7 @@ message.member.addRole(message.guild.roles.find("name", "100"));
 
   if (message.content === 'الوان') {
       if (!message.channel.guild) return;
-    message.channel.sendFile('URL-Of-colors-Img');
+    message.channel.sendFile('http://www8.0zz0.com/2018/08/31/00/438288606.png');
   }
 	
 });
