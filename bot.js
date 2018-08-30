@@ -168,7 +168,7 @@ const Sra7a = [
 	 'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ]
    client.on('message', message => {
- if (message.content.startsWith('%صراحه')) {
+ if (message.content.startsWith('صراحة')) {
      if(!message.channel.guild) return message.reply('** This command only for servers **');
   var client= new Discord.RichEmbed()
   .setTitle("لعبة صراحة ..")
@@ -240,7 +240,7 @@ const Za7f = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("%عقاب")) {
+   if (message.content.startsWith("عقاب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -297,7 +297,7 @@ message.channel.sendEmbed(cat);
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith("%كت تويت")) {
+   if (message.content.startsWith("كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -325,7 +325,7 @@ const secreT = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("%خواطر")) {
+   if (message.content.startsWith("خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -345,7 +345,7 @@ const Love = [  "**احبك / عدد قطرات المـــطر والشجر و
 
 
  client.on('message', message => {
-   if (message.content.startsWith("%حب")) {
+   if (message.content.startsWith("حب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -409,10 +409,10 @@ const zead = [
    '*** مريم : ماذا تريد ان تسمع ***',
    '*** مريم : اضغط على الرابط اهداء مني لك | https://www.youtube.com/watch?v=hvSiuQccmtg ***',
    '*** احد ما خرج من المنزل ***',
-   '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدني في نشر البوت وادخل هذا السيرفر  ***'
+   '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر والسيرفر 1000عضو , ساعدني في نشر البوت و السيرفر يلا  ***'
 ]
  client.on('message', message => {
- if (message.content.startsWith('%مريم')) {
+ if (message.content.startsWith('مريم')) {
   var mariam= new Discord.RichEmbed()
   .setTitle("لعبة مريم ..")
   .setColor('RANDOM')
@@ -822,7 +822,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription(" ***Welcome To Emerald Support Server*** " + `
  **
-رابط السيرفر | https://discord.gg/UGzkFVT
+رابط السيرفر | https://discord.gg/nSVdXTP
  **
 `);
   message.author.sendEmbed(embed);
@@ -947,7 +947,7 @@ client.on("message", message => {
   
   let command = message.content.split(" ")[0];
   
-  if (command === "%mute") {
+  if (command === "اسكت") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'mute-log');
@@ -983,7 +983,7 @@ return message.reply("**:white_check_mark: .. تم اعطاء العضو ميو�
   
   let command = message.content.split(" ")[0];
   
-  if (command === "%unmute") {
+  if (command === "احكي") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'mute-log');
@@ -1014,7 +1014,7 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 
 client.on('message', message => {
 
-       if(message.content === prefix + "%mutechannel") {
+       if(message.content === prefix + "mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -1026,7 +1026,7 @@ client.on('message', message => {
               });
                 }
 //viper
-    if(message.content === prefix + "%unmutechannel") {
+    if(message.content === prefix + "unmutechannel") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
@@ -1053,7 +1053,7 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "kick") {
+  if (command == "طرد") {
                if(!message.channel.guild) return message.reply('** This command only for servers**');
          
   if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.reply("**You Don't Have ` KICK_MEMBERS ` Permission**");
@@ -1127,7 +1127,7 @@ client.on('message', message => {
 
 client.on("message", message => {
               var args = message.content.substring(prefix.length).split(" ");
-              if (message.content.startsWith(prefix + "clear")) {
+              if (message.content.startsWith(prefix + "مسح")) {
                   if(!message.channel.guild) return message.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
      if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**⚠  لا يوجد لديك صلاحية لمسح الشات**');
           var msg;
@@ -1148,7 +1148,7 @@ client.on("message", message => {
   
 client.on('message', message => {
 
-if (message.content.startsWith("%add.r")) {
+if (message.content.startsWith("add.r")) {
              if(!message.channel.guild) return message.reply('**Commands in the server**');
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply('⚠ **You do not have permissions**');
         let args = message.content.split(" ").slice(1);
@@ -1166,7 +1166,7 @@ if (message.content.startsWith("%add.r")) {
 //اومر الكونسل و البوت//
 
 client.on('message', message => {
-    if(message.content === "%bot") {
+    if(message.content === "bot") {
         const embed = new Discord.RichEmbed()
         .setColor("#00FFFF")
         .setDescription(`**Servers**🌐 **__${client.guilds.size}__**
@@ -1191,7 +1191,7 @@ client.on('ready',  () => {
 
       client.on('message', message => {
                                 if(!message.channel.guild) return;
-                                if(message.content === "%ping") {
+                                if(message.content === "ping") {
                             var msg = `${Date.now() - message.createdTimestamp}`
                             var api = `${Math.round(client.ping)}`
                             if (message.author.bot) return;
@@ -1313,56 +1313,56 @@ client.on('message', message=>{
     }
 });
 
-var x1 = "%color 1"
-var x2 = "%color 2"
-var x3 = "%color 3"
-var x4 = "%color 4"
-var x5 = "%color 5"
-var x6 = "%color 6"
-var x7 = "%color 7"
-var x8 = "%color 8"
-var x9 = "%color 9"
-var x10 = "%color 10"
-var x11 = "%color 11"
-var x12 = "%color 12"
-var x13 = "%color 13"
-var x14 = "%color 14"
-var x15 = "%color 15"
-var x16 = "%color 16"
-var x17 = "%color 17"
-var x18 = "%color 18"
-var x19 = "%color 19"
-var x20 = "%color 20"
-var x21 = "%color 21"
-var x22 = "%color 22"
-var x23 = "%color 23"
-var x24 = "%color 24"
-var x25 = "%color 25"
-var x26 = "%color 26"
-var x27 = "%color 27"
-var x28 = "%color 28"
-var x29 = "%color 29"
-var x30 = "%color 30"
-var x31 = "%color 31"
-var x32 = "%color 32"
-var x33 = "%color 33"
-var x34 = "%color 34"
-var x35 = "%color 35"
-var x36 = "%color 36"
-var x37 = "%color 37"
-var x38 = "%color 38"
-var x39 = "%color 39"
-var x40 = "%color 40"
-var x41 = "%color 41"
-var x42 = "%color 42"
-var x43 = "%color 43"
-var x44 = "%color 44"
-var x45 = "%color 45"
-var x46 = "%color 46"
-var x47 = "%color 47"
-var x48 = "%color 48"
-var x49 = "%color 49"
-var x50 = "%color 50"
+var x1 = "لون 1"
+var x2 = "لون 2"
+var x3 = "لون 3"
+var x4 = "لون 4"
+var x5 = "لون 5"
+var x6 = "لون 6"
+var x7 = "لون 7"
+var x8 = "لون 8"
+var x9 = "لون 9"
+var x10 = "لون 10"
+var x11 = "لون 11"
+var x12 = "لون 12"
+var x13 = "لون 13"
+var x14 = "لون 14"
+var x15 = "لون 15"
+var x16 = "لون 16"
+var x17 = "لون 17"
+var x18 = "لون 18"
+var x19 = "لون 19"
+var x20 = "لون 20"
+var x21 = "لون 21"
+var x22 = "لون 22"
+var x23 = "لون 23"
+var x24 = "لون 24"
+var x25 = "لون 25"
+var x26 = "لون 26"
+var x27 = "لون 27"
+var x28 = "لون 28"
+var x29 = "لون 29"
+var x30 = "لون 30"
+var x31 = "لون 31"
+var x32 = "لون 32"
+var x33 = "لون 33"
+var x34 = "لون 34"
+var x35 = "لون 35"
+var x36 = "لون 36"
+var x37 = "لون 37"
+var x38 = "لون 38"
+var x39 = "لون 39"
+var x40 = "لون 40"
+var x41 = "لون 41"
+var x42 = "لون 42"
+var x43 = "لون 43"
+var x44 = "لون 44"
+var x45 = "لون 45"
+var x46 = "لون 46"
+var x47 = "لون 47"
+var x48 = "لون 48"
+var x49 = "لون 49"
+var x50 = "لون 50"
 var x51 = "%color 51"
 var x52 = "%color 52"
 var x53 = "%color 53"
@@ -12493,7 +12493,7 @@ message.member.addRole(message.guild.roles.find("name", "100"));
 	}
 
 
-  if (message.content === '%colors') {
+  if (message.content === 'الوان') {
       if (!message.channel.guild) return;
     message.channel.sendFile('URL-Of-colors-Img');
   }
@@ -12508,7 +12508,7 @@ member.addRole(member.guild.roles.find('name', 'not active'));
 
 client.on('message', message => {                      
     if(!message.channel.guild) return;
-       if(message.content.startsWith(prefix + '%active')) {
+       if(message.content.startsWith(prefix + 'active')) {
         let modlog = client.channels.find('name', 'الـــــــــشات_العام');
        if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
        message.channel.sendMessage(`اضغط على الصح عشان تتفعل`).then(msg => {
@@ -12537,7 +12537,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.startsWith("$myinv")) {
+    if (message.content.startsWith("myinv")) {
     message.guild.fetchInvites()
     .then(invites => message.channel.send(`انت جبت   ${invites.find(invite => invite.inviter.id === message.author.id).uses} عضو لهاذا السيرفر`))
      
