@@ -431,7 +431,7 @@ const zead = [
 
             var prefix = "";
 client.on('message', message => {
-         if (message.content === prefix + "dt") {
+         if (message.content === ("dt") {
          if (!message.channel.guild) return message.reply('** This command only for servers **');  
          var currentTime = new Date(),
             hours = currentTime.getHours() + 4 ,
@@ -496,7 +496,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-var prefix = "%";
+var prefix = "!";
 
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -526,7 +526,7 @@ return;
     
 client.on('message', message => {
      var prefix = "%"
-if (message.content.startsWith(prefix + "uptime")) {
+if (message.content.startsWith("uptime")) {
     let uptime = client.uptime;
 
     let days = 0;
@@ -570,7 +570,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 
 client.on('message', function(msg) {
          var prefix = "%"
-    if(msg.content.startsWith (prefix  + 'server')) {
+    if(msg.content.startsWith ('server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(msg.guild.iconURL)
@@ -625,7 +625,7 @@ if(command === `${prefix}message`) {
   
    client.on("message", msg => {
            var prefix = "%";
-  if(msg.content.startsWith (prefix + "id")) {
+  if(msg.content.startsWith ("id")) {
     if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
       const embed = new Discord.RichEmbed();
   embed.addField(":cloud_tornado:  الاسم", `**[ ${msg.author.username}#${msg.author.discriminator} ]**`, true)
@@ -644,7 +644,7 @@ if(command === `${prefix}message`) {
 });
 
 client.on('message', message => {
-    if(message.content == '%member') {
+    if(message.content == 'member') {
     const embed = new Discord.RichEmbed()
     .setDescription(`**Members info🔋
 :green_heart: online:   ${message.guild.members.filter(m=>m.presence.status == 'online').size}
@@ -786,7 +786,7 @@ if (message.content.startsWith("%cv")) {
 
 
 client.on("message", (message) => {
-    if (message.content.startsWith('%delet')) {
+    if (message.content.startsWith('delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -798,7 +798,7 @@ client.on("message", (message) => {
 
  client.on('message' , message => {
 
-    if (message.content === "%invite") {
+    if (message.content === "invite") {
         if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
@@ -815,7 +815,7 @@ client.on("message", (message) => {
 
   client.on('message' , message => {
 
-    if (message.content === "%support") {
+    if (message.content === "support") {
         if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
@@ -1095,7 +1095,7 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "ban") {
+  if (command == "باند") {
                if(!message.channel.guild) return message.reply('** This command only for servers**');
          
   if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.reply("**You Don't Have ` BAN_MEMBERS ` Permission**");
@@ -1124,7 +1124,6 @@ client.on('message', message => {
   })
 }
 });
-
 client.on("message", message => {
               var args = message.content.substring(prefix.length).split(" ");
               if (message.content.startsWith("مسح")) {
@@ -1232,34 +1231,6 @@ client.user.setStatus("dnd");
 
 client.on('message', function(message) {
                   if(!message.channel.guild) return;
-    if(message.content ===  '%colors 50') {
-        if(message.member.hasPermission('MANAGE_ROLES')) {
-            setInterval(function(){})
-            message.channel.send('جاري عمل الالوان |✅')
-        }else{
-            message.channel.send('ما معاك البرمشن المطلوب  |❌')
-            }
-    }
-});
-
-client.on('message', message=>{
-    if (message.content ===  '%colors 50'){
-              if(!message.channel.guild) return;
-            if (message.member.hasPermission('MANAGE_ROLES')){
-                setInterval(function(){})
-                  let count = 0;
-                  let ecount = 0;
-        for(let x = 1; x < 51; x++){
-            message.guild.createRole({name:x,
-            color: 'RANDOM'})
-            }
-            }
-    }
-});
-
-
-client.on('message', function(message) {
-                  if(!message.channel.guild) return;
     if(message.content ===  '%colors 100') {
         if(message.member.hasPermission('MANAGE_ROLES')) {
             setInterval(function(){})
@@ -1278,34 +1249,6 @@ client.on('message', message=>{
                   let count = 0;
                   let ecount = 0;
         for(let x = 1; x < 101; x++){
-            message.guild.createRole({name:x,
-            color: 'RANDOM'})
-            }
-            }
-    }
-});
-
-
-client.on('message', function(message) {
-                  if(!message.channel.guild) return;
-    if(message.content ===  '%colors 140') {
-        if(message.member.hasPermission('MANAGE_ROLES')) {
-            setInterval(function(){})
-            message.channel.send('جاري عمل الالوان |✅')
-        }else{
-            message.channel.send('ما معاك البرمشن المطلوب  |❌')
-            }
-    }
-});
-
-client.on('message', message=>{
-    if (message.content ===  '%colors 140'){
-              if(!message.channel.guild) return;
-            if (message.member.hasPermission('MANAGE_ROLES')){
-                setInterval(function(){})
-                  let count = 0;
-                  let ecount = 0;
-        for(let x = 1; x < 141; x++){
             message.guild.createRole({name:x,
             color: 'RANDOM'})
             }
@@ -1363,56 +1306,56 @@ var x47 = "لون 47"
 var x48 = "لون 48"
 var x49 = "لون 49"
 var x50 = "لون 50"
-var x51 = "%color 51"
-var x52 = "%color 52"
-var x53 = "%color 53"
-var x54 = "%color 54"
-var x55 = "%color 55"
-var x56 = "%color 56"
-var x57 = "%color 57"
-var x58 = "%color 58"
-var x59 = "%color 59"
-var x60 = "%color 60"
-var x61 = "%color 61"
-var x62 = "%color 62"
-var x63 = "%color 63"
-var x64 = "%color 64"
-var x65 = "%color 65"
-var x66 = "%color 66"
-var x67 = "%color 67"
-var x68 = "%color 68"
-var x69 = "%color 69"
-var x70 = "%color 70"
-var x71 = "%color 71"
-var x72 = "%color 72"
-var x73 = "%color 73"
-var x74 = "%color 74"
-var x75 = "%color 75"
-var x76 = "%color 76"
-var x77 = "%color 77"
-var x78 = "%color 78"
-var x79 = "%color 79"
-var x80 = "%color 80"
-var x81 = "%color 81"
-var x82 = "%color 82"
-var x83 = "%color 83"
-var x84 = "%color 84"
-var x85 = "%color 85"
-var x86 = "%color 86"
-var x87 = "%color 87"
-var x88 = "%color 88"
-var x89 = "%color 89"
-var x90 = "%color 90"
-var x91 = "%color 91"
-var x92 = "%color 92"
-var x93 = "%color 93"
-var x94 = "%color 94"
-var x95 = "%color 95"
-var x96 = "%color 96"
-var x97 = "%color 97"
-var x98 = "%color 98"
-var x99 = "%color 99"
-var x100 = "%color 100"
+var x51 = "لون 51"
+var x52 = "لون 52"
+var x53 = "لون 53"
+var x54 = "لون 54"
+var x55 = "لون 55"
+var x56 = "لون 56"
+var x57 = "لون 57"
+var x58 = "لون 58"
+var x59 = "لون 59"
+var x60 = "لون 60"
+var x61 = "لون 61"
+var x62 = "لون 62"
+var x63 = "لون 63"
+var x64 = "لون 64"
+var x65 = "لون 65"
+var x66 = "لون 66"
+var x67 = "لون 67"
+var x68 = "لون 68"
+var x69 = "لون 69"
+var x70 = "لون 70"
+var x71 = "لون 71"
+var x72 = "لون 72"
+var x73 = "لون 73"
+var x74 = "لون 74"
+var x75 = "لون 75"
+var x76 = "لون 76"
+var x77 = "لون 77"
+var x78 = "لون 78"
+var x79 = "لون 79"
+var x80 = "لون 80"
+var x81 = "لون 81"
+var x82 = "لون 82"
+var x83 = "لون 83"
+var x84 = "لون 84"
+var x85 = "لون 85"
+var x86 = "لون 86"
+var x87 = "لون 87"
+var x88 = "لون 88"
+var x89 = "لون 89"
+var x90 = "لون 90"
+var x91 = "لون 91"
+var x92 = "لون 92"
+var x93 = "لون 93"
+var x94 = "لون 94"
+var x95 = "لون 95"
+var x96 = "لون 96"
+var x97 = "لون 97"
+var x98 = "لون 98"
+var x99 = "لون 99"
+var x100 = "لون 100"
 
 client.on('message', message => {
 	if (message.content === x1) {
