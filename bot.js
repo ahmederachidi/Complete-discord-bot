@@ -12566,7 +12566,4 @@ message.channel.send(alpha);
 };
   });
      
-    }
-});
-
 client.login(process.env.BOT_TOKEN);
