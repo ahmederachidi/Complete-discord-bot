@@ -146,6 +146,7 @@ client.on('message', message => {
   })
 
 
+
 client.on('message' , message => {
 if (message.content === '!own') {
          let embed = new Discord.RichEmbed()
