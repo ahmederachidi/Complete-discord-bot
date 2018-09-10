@@ -19,7 +19,7 @@ client.on('message', message => {
 
  message.author.sendMessage(`
  !!
-``***** 
+***** 
 __~~BlaCko Bot~~__ By: Ahmed_BlaCko#9170
  
  
@@ -100,7 +100,7 @@ __~~BlaCko Bot~~__ By: Ahmed_BlaCko#9170
 
 ==================================================================
 
-*****``
+*****
 
 `);
 
